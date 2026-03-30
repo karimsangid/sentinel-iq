@@ -1,0 +1,30 @@
+Jan 15 08:23:01 webserver01 sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 52341 ssh2
+Jan 15 08:23:03 webserver01 sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 52342 ssh2
+Jan 15 08:23:05 webserver01 sshd[12345]: Failed password for invalid user root from 192.168.1.100 port 52343 ssh2
+Jan 15 08:23:07 webserver01 sshd[12345]: Failed password for invalid user root from 192.168.1.100 port 52344 ssh2
+Jan 15 08:23:09 webserver01 sshd[12345]: Failed password for invalid user test from 192.168.1.100 port 52345 ssh2
+Jan 15 08:24:15 webserver01 sshd[12400]: Accepted publickey for deploy from 10.0.0.50 port 44312 ssh2
+Jan 15 08:30:00 webserver01 CRON[12500]: (root) CMD (/usr/bin/certbot renew --quiet)
+Jan 15 08:45:12 firewall01 kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.45 DST=10.0.0.1 PROTO=TCP SPT=44321 DPT=22 WINDOW=65535
+Jan 15 08:45:13 firewall01 kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.45 DST=10.0.0.1 PROTO=TCP SPT=44322 DPT=23 WINDOW=65535
+Jan 15 08:45:14 firewall01 kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.45 DST=10.0.0.1 PROTO=TCP SPT=44323 DPT=80 WINDOW=65535
+Jan 15 08:45:15 firewall01 kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.45 DST=10.0.0.1 PROTO=TCP SPT=44324 DPT=443 WINDOW=65535
+Jan 15 09:00:00 dbserver01 mysqld[8801]: Warning: Aborted connection 1523 to db: 'production' user: 'app_user' host: '10.0.0.20' (Got timeout reading communication packets)
+Jan 15 09:01:22 webserver01 nginx[9012]: 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 15 "-" "HealthChecker/1.0"
+Jan 15 09:15:30 appserver01 systemd[1]: Starting Docker Application Container Engine...
+Jan 15 09:15:35 appserver01 systemd[1]: Started Docker Application Container Engine.
+Jan 15 09:30:00 webserver01 CRON[13000]: (www-data) CMD (/usr/local/bin/cleanup-temp.sh)
+Jan 15 09:45:00 monitoring01 nagios[5500]: SERVICE ALERT: webserver01;HTTP;WARNING;SOFT;1;HTTP WARNING: HTTP/1.1 503 Service Temporarily Unavailable
+Jan 15 09:45:30 monitoring01 nagios[5500]: SERVICE ALERT: webserver01;HTTP;CRITICAL;HARD;3;HTTP CRITICAL: HTTP/1.1 503 Service Temporarily Unavailable
+Jan 15 09:46:00 webserver01 nginx[9012]: 198.51.100.23 - - "POST /admin/login HTTP/1.1" 401 52 "-" "Mozilla/5.0"
+Jan 15 09:46:02 webserver01 nginx[9012]: 198.51.100.23 - - "POST /admin/login HTTP/1.1" 401 52 "-" "Mozilla/5.0"
+Jan 15 09:46:05 webserver01 nginx[9012]: 198.51.100.23 - - "POST /admin/login HTTP/1.1" 401 52 "-" "Mozilla/5.0"
+Jan 15 10:00:00 dbserver01 mysqld[8801]: InnoDB: Warning: disk space is running low on /var/lib/mysql
+Jan 15 10:15:00 appserver01 dockerd[9200]: container app-api started successfully
+Jan 15 10:30:45 firewall01 kernel: [UFW ALLOW] IN=eth0 OUT=eth1 SRC=10.0.0.20 DST=10.0.0.5 PROTO=TCP SPT=5432 DPT=38291
+Jan 15 11:00:00 webserver01 sshd[14000]: Accepted password for admin from 10.0.0.2 port 55123 ssh2
+Jan 15 11:05:00 appserver01 sudo[14100]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/systemctl restart nginx
+Jan 15 11:05:02 appserver01 systemd[1]: Stopping nginx.service...
+Jan 15 11:05:03 appserver01 systemd[1]: Starting nginx.service...
+Jan 15 11:05:04 appserver01 systemd[1]: Started nginx.service.
+Jan 15 11:10:00 monitoring01 nagios[5500]: SERVICE ALERT: webserver01;HTTP;OK;HARD;1;HTTP OK: HTTP/1.1 200 OK

