@@ -7,6 +7,7 @@ from pathlib import Path
 APP_NAME = "SentinelIQ"
 APP_VERSION = "0.1.0"
 APP_DESCRIPTION = "AI-powered security log analyzer"
+APP_AUTHOR = "Hummus Development LLC"
 
 # ── Paths ─────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).resolve().parent

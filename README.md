@@ -1,5 +1,7 @@
 # SentinelIQ
 
+**By [Hummus Development LLC](https://github.com/karimsangid)**
+
 AI-powered security log analyzer. Ingest logs from multiple sources, detect anomalies with embeddings and statistical methods, summarize incidents with LLMs, and query your logs in plain English.
 
 ## Features
@@ -143,4 +145,4 @@ pytest tests/ -v
 
 ## License
 
-MIT
+MIT License — Copyright (c) 2026 Hummus Development LLC

@@ -33,7 +33,7 @@ export default function App() {
           <Shield size={28} className="brand-icon" />
           <div>
             <h1 className="brand-title">SentinelIQ</h1>
-            <span className="brand-subtitle">Security Analyzer</span>
+            <span className="brand-subtitle">by Hummus Development</span>
           </div>
         </div>
         <nav className="sidebar-nav">
@@ -53,7 +53,7 @@ export default function App() {
             <span className="status-dot online" />
             <span>System Online</span>
           </div>
-          <span className="version">v0.1.0</span>
+          <span className="version">v0.1.0 — Hummus Development LLC</span>
         </div>
       </aside>
       <main className="main-content">
